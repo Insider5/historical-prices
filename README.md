@@ -26,4 +26,4 @@ A web application that allows users to view and compare historical prices for mu
 
 ## Live Demo
 
-Visit the live site at: [Historical Prices Viewer](https://[your-username].github.io/[repository-name]/) 
+Visit the live site at: [Historical Prices Viewer](https://insider5.github.io/historical-prices/) 
