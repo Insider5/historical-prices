@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Prices</title>
+    <link rel="stylesheet" href="https://use.typekit.net/[YOUR-KIT-CODE].css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HISTORICAL PRICES</h1>
+        <p class="description">Select up to five (5) funds, their asset class and date range to view historical price data.</p>
+        <a href="#" class="get-performance">GET HISTORICAL PERFORMANCE →</a>
+
+        <div class="step-section">
+            <h2>STEP 1: SELECT A FUND</h2>
+            <div class="fund-selection">
+                <div class="select-group">
+                    <select id="fundDropdown" class="fund-dropdown">
+                        <option value="">Select A Fund</option>
+                    </select>
+                    <select id="classDropdown" class="class-dropdown">
+                        <option value="">Class</option>
+                    </select>
+                </div>
+                <button class="add-fund">+ Add Fund</button>
+            </div>
+        </div>
+
+        <div class="step-section">
+            <h2>STEP 2: SELECT HISTORICAL DATA RANGE</h2>
+            <div class="date-selection">
+                <div class="date-inputs">
+                    <input type="date" id="startDate">
+                    <span class="date-separator">To</span>
+                    <input type="date" id="endDate">
+                </div>
+                <p class="or-separator">or</p>
+                <p class="select-period">select from a defined time period below</p>
+                <select id="timePeriodDropdown" class="time-dropdown">
+                    <option value="">Select Time Period</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="comparing-section">
+            <h3>COMPARING:</h3>
+            <a href="#" class="clear-all">Clear All</a>
+        </div>
+
+        <button class="get-history">Get History</button>
+
+        <div id="historyTableContainer" class="history-table-container" style="display: none;">
+            <div class="table-scroll">
+                <table id="historyTable" class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <!-- Dynamic fund columns will be added here -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

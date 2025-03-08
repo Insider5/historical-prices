@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+}
+
+h1 {
+    font-family: Knockout-HTF48-Featherweight, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #002247;
+    margin: 25px 0 12.5px;
+    display: block;
+}
+
+h2 {
+    font-family: Knockout-HTF48-Featherweight, serif;
+    color: #002247;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+    line-height: 1;
+}
+
+.description {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.get-performance {
+    color: #002247;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    float: right;
+    margin-top: -60px;
+    text-transform: uppercase;
+}
+
+.step-section {
+    margin-bottom: 30px;
+}
+
+.fund-selection {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.select-group {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.fund-dropdown {
+    flex: 2;
+}
+
+.class-dropdown {
+    flex: 1;
+}
+
+.add-fund {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid #002B49;
+    color: #002B49;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.date-selection {
+    max-width: 600px;
+}
+
+.date-inputs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="date"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.date-separator {
+    color: #333;
+    font-weight: bold;
+}
+
+.or-separator {
+    color: #666;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.select-period {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.time-dropdown {
+    width: 100%;
+}
+
+.comparing-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.comparing-section h3 {
+    color: #002B49;
+    margin: 0;
+    font-size: 16px;
+}
+
+.fund-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #002B49;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.fund-tag .remove-fund {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 0 3px 8px;
+    line-height: 1;
+}
+
+.fund-tag .remove-fund:hover {
+    opacity: 0.8;
+}
+
+.clear-all {
+    color: #002B49;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.get-history {
+    background-color: #E8BD4F;
+    color: #002B49;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-history:hover {
+    background-color: #d4ac3f;
+}
+
+.history-table-container {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.history-table {
+    width: auto;
+    min-width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+.history-table th:first-child,
+.history-table td:first-child {
+    width: 100px;
+    min-width: 100px;
+    padding-right: 20px;
+}
+
+.history-table th:not(:first-child),
+.history-table td:not(:first-child) {
+    width: 150px;
+    min-width: 150px;
+    text-align: right;
+}
+
+.history-table th {
+    background-color: #f5f5f5;
+    color: #002B49;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
